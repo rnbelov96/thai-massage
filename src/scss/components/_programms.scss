@@ -1,0 +1,77 @@
+.programms {
+  position: relative;
+  top: -130px;
+
+  margin-bottom: -130px;
+  min-height: 1208px;
+  padding-top: 165px;
+  padding-bottom: 217px;
+
+  @include bg;
+  background-image: url('/src/img/bgs/programms-bg.jpg');
+}
+
+.programms__title {
+  margin-bottom: 18px;
+
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  color: $brown;
+
+  span {
+    color: $red;
+  }
+}
+
+.programms__subtitle {
+  margin-bottom: 50px;
+
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.programms__text {
+  margin-bottom: 37px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.programms__wrapper {
+  position: relative;
+}
+
+.programms__list {
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  padding-left: 125px;
+  padding-top: 35px;
+  margin-bottom: 0;
+
+  list-style: none;
+}
+
+.programms__item {
+  margin-bottom: 30px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  color: $brown;
+}
+
+.programms__cross-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 140px;
+  height: 562px;
+
+  background-image: url("/src/img/icons/cross-bg.png");
+  background-position: 0 0;
+}

@@ -1,0 +1,39 @@
+.desc {
+  min-height: 900px;
+
+  background-color: $brown;
+
+  overflow-x: hidden;
+}
+
+.desc__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.desc__title {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: $yellow;
+}
+
+.desc__text {
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  color: $white;
+}
+
+.desc__note {
+  margin-bottom: 0;
+
+  font-size: 11px;
+  line-height: 13px;
+  color: $yellow;
+}

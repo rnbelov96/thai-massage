@@ -1,0 +1,209 @@
+.calc {
+  position: relative;
+  z-index: 1;
+  top: -145px;
+  margin-bottom: -145px;
+  min-height: 860px;
+
+  overflow-x: hidden;
+}
+
+.calc__wrapper {
+  position: relative;
+  z-index: 1;
+
+  padding-top: 80px;
+  padding-right: 47px;
+  padding-bottom: 58px;
+  padding-left: 117px;
+
+  background-color: $yellow-light;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+
+  &::before {
+    position: absolute;
+    bottom: -80px;
+    right: -100px;
+
+    content: url("/src/img/flower.png");
+  }
+}
+
+.calc__title {
+  margin-bottom: 52px;
+
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  color: $brown;
+
+  span {
+    color: $red;
+  }
+}
+
+.calc__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.calc__inputs-wrapper {
+  width: 562px;
+}
+
+.calc__input-box {
+  margin-bottom: 30px;
+}
+
+.calc__input-label {
+  margin-bottom: 21px;
+}
+
+.calc__label-title {
+  margin-bottom: 0;
+  margin-right: 15px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  color: $brown;
+}
+
+.calc__label-number {
+  font-size: 11px;
+  line-height: 13px;
+  color: $yellow-dark;
+}
+
+.calc__input-range-box {
+  position: relative;
+}
+
+.calc__input {
+  width: 100%;
+  height: 32px;
+
+  background: $white;
+  border: 1px solid $yellow;
+  border-radius: 20px;
+
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  &::-webkit-slider-thumb {
+    width: 42px;
+    height: 42px;
+
+    background-color: $white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    border: 3px solid #cb4430;
+    border-radius: 50%;
+    cursor: pointer;
+
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  &::-moz-range-thumb {
+    width: 42px;
+    height: 42px;
+
+    background-color: $white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    border: 3px solid #cb4430;
+    border-radius: 50%;
+    cursor: pointer;
+
+    appearance: none;
+    -moz-appearance: none;
+  }
+  &::-ms-thumb {
+    width: 42px;
+    height: 42px;
+
+    background-color: $white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    border: 3px solid #cb4430;
+    border-radius: 50%;
+    cursor: pointer;
+
+    appearance: none;
+  }
+}
+
+.calc__input-marks {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+  width: 95%;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  pointer-events: none;
+}
+
+.calc__input-mark {
+  width: 16px;
+  text-align: center;
+
+  font-size: 26px;
+  line-height: 32px;
+  color: $yellow;
+}
+
+.calc__text-box {
+  width: 308px;
+  padding: 30px 35px;
+
+  border: 1px solid $yellow;
+
+  border-radius: 20px;
+}
+
+.calc__text {
+  margin-bottom: 10px;
+
+  font-size: 15px;
+  line-height: 19px;
+  color: $yellow-dark;
+}
+
+.calc__income-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calc__income-item {
+  margin-right: 55px;
+  margin-bottom: 20px;
+}
+
+.calc__income-title {
+  margin-bottom: 5px;
+
+  font-size: 15px;
+  line-height: 19px;
+  color: $brown;
+}
+
+.calc__income-number {
+  font-size: 26px;
+  line-height: 32px;
+  color: $red;
+}
+
+.calc__cross-img {
+  position: absolute;
+  top: 0;
+  left: -70px;
+  width: 140px;
+  height: 562px;
+
+  background-image: url("/src/img/icons/cross-bg.png");
+  background-position: left top;
+}

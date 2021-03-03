@@ -1,0 +1,123 @@
+.line-form {
+  position: relative;
+  top: -130px;
+
+  margin-bottom: -130px;
+  min-height: 490px;
+  padding-top: 145px;
+  padding-bottom: 51px;
+
+  background: linear-gradient(180deg, #c9b76b 0%, #84742f 100%);
+}
+
+.line-form__title {
+  margin-bottom: 36px;
+
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  color: $white;
+
+  span {
+    color: $yellow-light;
+  }
+}
+
+.line-form__input-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.line-form__input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 311px;
+  margin-bottom: 15px;
+  margin-right: 29px;
+
+  font-size: 15px;
+  line-height: 19px;
+  color: $yellow;
+
+  border: 1px solid $yellow;
+  background-color: $white;
+  border-radius: 5px;
+
+  &:hover, &:focus {
+    color: $yellow-dark;
+    border-color: $yellow-dark;
+    &::-webkit-input-placeholder {
+      color: $yellow-dark;
+    }
+    &::-moz-placeholder {
+      color: $yellow-dark;
+    }
+    &:-ms-input-placeholder {
+      color: $yellow-dark;
+    }
+    &:-moz-placeholder {
+      color: $yellow-dark;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $yellow;
+  }
+  &::-moz-placeholder {
+    color: $yellow;
+  }
+  &:-ms-input-placeholder {
+    color: $yellow;
+  }
+  &:-moz-placeholder {
+    color: $yellow;
+  }
+}
+
+.line-form__btn {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 271px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: $brown;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+
+  background: linear-gradient(180deg, #ffffff 0%, #ffe470 100%);
+  border: 1px solid #c9b76b;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+
+  &:hover,
+  &:active {
+    background: linear-gradient(180deg, #fff9e2 0%, #ffd93b 100%);
+    box-shadow: none;
+  }
+}
+
+.line-form__policy-text {
+  font-size: 8px;
+  line-height: 10px;
+  text-align: center;
+  color: $yellow;
+}
+
+.line-form__policy {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: $white;
+  text-decoration: underline;
+}

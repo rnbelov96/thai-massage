@@ -1,0 +1,45 @@
+body {
+  font-family: 'Montserrat';
+  color: $brown;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1144px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+  &_desc {
+    padding-left: 97px;
+    padding-right: 97px;
+    padding-bottom: 85px;
+
+    @include bg;
+    background-image: url('/src/img/bgs/desc-bg.jpg');
+  }
+
+  &_calc, &_line-form {
+    padding-left: 70px;
+  }
+
+  @media (max-width: 1200px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (max-width: 575px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
